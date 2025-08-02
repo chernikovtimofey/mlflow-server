@@ -4,4 +4,4 @@ RUN pip install mlflow boto3 psycopg2-binary
 
 EXPOSE 5000
 
-ENTRYPOINT ["mlflow", "server"]
+CMD ["mlflow", "server", "--host", "0.0.0.0", "--port", "5000"]
